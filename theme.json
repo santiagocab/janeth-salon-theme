@@ -1,0 +1,121 @@
+{
+	"version": 2,
+	"$schema": "https://schemas.wp.org/wp/6.1/theme.json",
+	"settings": {
+		"appearanceTools": true,
+		"color": {
+			"palette": [
+				{
+					"color": "#ed2a24",
+					"name": "Primary",
+					"slug": "primary"
+				},
+				{
+					"color": "#a6a6a6",
+					"name": "Secondary",
+					"slug": "secondary"
+				},
+				{
+					"color": "#f5f7fa",
+					"name": "Tertiary",
+					"slug": "tertiary"
+				},
+				{
+					"color": "#fff",
+					"name": "Base",
+					"slug": "base"
+				},
+				{
+					"color": "#ed2a24",
+					"name": "Links",
+					"slug": "custom-links"
+				},
+				{
+					"color": "#d3322d",
+					"name": "Links Hover",
+					"slug": "custom-links-hover"
+				},
+				{
+					"color": "#262626",
+					"name": "Text",
+					"slug": "text-primary"
+				}
+			],
+			"duotone": [],
+            "customDuotone": false,
+            "defaultDuotone": true
+		},
+		"layout": {
+			"contentSize": "960px",
+			"wideSize": "1240px"
+		},
+		"spacing": {
+			"customSpacingSize": true,
+			"spacingScale": {
+				"increment": 0,
+				"mediumStep": 0,
+				"operator": "*",
+				"steps": 0,
+				"unit": "px"
+			},
+			"spacingSizes": [
+				{
+					"name": "XX Small",
+					"size": "calc(var(--wp--preset--font-size--medium,1rem)/2)",
+					"slug": "xx-small"
+				},
+				{
+					"name": "X Small",
+					"size": "calc(var(--wp--preset--font-size--medium,1rem))",
+					"slug": "x-small"
+				},
+				{
+					"name": "Small",
+					"size": "clamp(var(--wp--preset--font-size--medium), 4vw, calc(var(--wp--preset--font-size--medium,1rem)*1.5))",
+					"slug": "small"
+				},
+				{
+					"name": "Medium",
+					"size": "clamp(var(--wp--preset--font-size--medium), 4vw, calc(var(--wp--preset--font-size--medium,1rem)*2))",
+					"slug": "medium"
+				},
+				{
+					"name": "Large",
+					"size": "calc(var(--wp--preset--font-size--medium,1rem)*3)",
+					"slug": "large"
+				},
+				{
+					"name": "X Large",
+					"size": "calc(var(--wp--preset--font-size--medium,1rem)*4)",
+					"slug": "x-large"
+				},
+				{
+					"name": "XX Large",
+					"size": "calc(var(--wp--preset--font-size--medium,1rem)*5)",
+					"slug": "xx-large"
+				}
+			],
+			"units": [
+				"%",
+				"px",
+				"em",
+				"rem",
+				"vh",
+				"vw"
+			]
+		}
+	},
+	"styles": {
+		"color": {
+			"text": "var(--wp--preset--color--text-primary)",
+			"background": "var(--wp--preset--color--background-primary)"
+		},
+		"spacing": {
+			"blockGap": "1rem",
+			"padding": {
+                "right": "var(--wp--preset--spacing--x-small)",
+                "left": "var(--wp--preset--spacing--x-small)"
+            }
+		}
+	}
+}
