@@ -1,0 +1,25 @@
+.wp-block-comment-template {
+	li {
+		> div {
+			position: relative;
+		}
+	}
+	.comment-reply-link {
+		position: absolute;
+		top: 20px;
+		right: 0px;
+	}
+}
+.comment-form .wp-block-button input {
+	background: #000;
+	color: #fff;
+	border-radius: 0px;
+	font-family: var(--wp--preset--font-family--kanit);
+	font-size: var(--wp--preset--font-size--x-small);
+	text-transform: uppercase;
+	padding: 14px 80px;
+}
+.comment-reply-title {
+	font-size: var(--wp--preset--font-size--xx-large);
+	text-transform: uppercase;
+}

@@ -1,9 +1,23 @@
+
 @media screen and (min-width: 768px) {
+	.site-header {
+		height: 125px;
+		z-index: 2;
+		nav a .wp-block-navigation-item__label {
+			color: #fff;
+		}
+	}
+	.page-template-page-hero-image .wp-block-cover.hero-image {
+		margin-top: -125px;
+	}
 	body.home .main-content {
 		margin-top:-125px;
 	}
 	#map {
 		width: 100%;
 		min-height: 500px;
+	}
+	.entry-content .wp-block-cover:nth-child(1) {
+		min-height: 720px !important;
 	}
 }

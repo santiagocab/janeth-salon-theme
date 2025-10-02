@@ -1,0 +1,10 @@
+@media screen and (max-width: 768px) {
+	.wp-block-query-title {
+		font-size: 2em;
+	}
+	.wp-block-search {
+		.wp-block-search__inside-wrapper {
+			width: 100% !important;
+		}
+	}	
+}
