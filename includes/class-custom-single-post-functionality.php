@@ -36,7 +36,7 @@ class Custom_Single_Post_Functionality {
 	 */
 	public function post_date_linebreaks_regex( $block_content ) {
 
-		if ( is_single() ) {
+		if ( is_single() || is_search() ) {
 			// Regex to find the <a> tag and its content.
 			// It captures the parts of the text to be reassembled with a line break.
 			// Matches exactly 3 letters, followed by a space, followed by numbers only. This so only affects the date format like "Sep 23".
