@@ -17,7 +17,7 @@
 <!-- wp:columns -->
 <div class="wp-block-columns"><!-- wp:column {"style":{"spacing":{"padding":{"top":"0","right":"0","bottom":"0","left":"0"},"blockGap":"0px"}}} -->
 <div class="wp-block-column" style="padding-top:0;padding-right:0;padding-bottom:0;padding-left:0"><!-- wp:image {"id":2262,"sizeSlug":"full","linkDestination":"custom"} -->
-<figure class="wp-block-image size-full"><a href="#"><img src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/images/internal.webp" alt="" class="wp-image-2262"/></a></figure>
+<figure class="wp-block-image size-full"><a href="#"><img src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/images/placeholder.webp" alt="" class="wp-image-2262"/></a></figure>
 <!-- /wp:image -->
 
 <!-- wp:group {"style":{"spacing":{"padding":{"right":"var:preset|spacing|x-small","left":"var:preset|spacing|x-small"}}},"backgroundColor":"base","layout":{"type":"constrained"}} -->
@@ -29,7 +29,7 @@
 
 <!-- wp:column {"style":{"spacing":{"blockGap":"0px"}}} -->
 <div class="wp-block-column"><!-- wp:image {"id":2265,"sizeSlug":"full","linkDestination":"custom"} -->
-<figure class="wp-block-image size-full"><a href="#"><img src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/images/internal.webp" alt="" class="wp-image-2265"/></a></figure>
+<figure class="wp-block-image size-full"><a href="#"><img src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/images/placeholder.webp" alt="" class="wp-image-2265"/></a></figure>
 <!-- /wp:image -->
 
 <!-- wp:group {"style":{"spacing":{"padding":{"right":"var:preset|spacing|x-small","left":"var:preset|spacing|x-small"}}},"backgroundColor":"base","layout":{"type":"constrained"}} -->
@@ -41,7 +41,7 @@
 
 <!-- wp:column {"style":{"spacing":{"blockGap":"0px"}}} -->
 <div class="wp-block-column"><!-- wp:image {"id":2263,"sizeSlug":"full","linkDestination":"custom"} -->
-<figure class="wp-block-image size-full"><a href="#"><img src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/images/internal.webp" alt="" class="wp-image-2263"/></a></figure>
+<figure class="wp-block-image size-full"><a href="#"><img src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/images/placeholder.webp" alt="" class="wp-image-2263"/></a></figure>
 <!-- /wp:image -->
 
 <!-- wp:group {"style":{"spacing":{"padding":{"right":"var:preset|spacing|x-small","left":"var:preset|spacing|x-small"}}},"backgroundColor":"base","layout":{"type":"constrained"}} -->

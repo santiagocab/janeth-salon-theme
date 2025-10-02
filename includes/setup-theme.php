@@ -46,7 +46,7 @@ function blockstarter_get_custom_logo_callback( $html ) {
 		return $html;
 	}
 	$home_url  = esc_url( home_url( '/' ) );
-	$svg_path  = esc_url( get_template_directory_uri() . '/assets/images/logo-dark.svg' );
+	$svg_path  = esc_url( get_template_directory_uri() . '/assets/images/logo.svg' );
 	$site_name = esc_attr( get_bloginfo( 'name' ) );
 	return '<a href="' . $home_url . '" class="custom-logo-link" rel="home"><img width="294" height="157" class="custom-logo default" src="' . $svg_path . '" alt="' . $site_name . '"></a>';
 }
