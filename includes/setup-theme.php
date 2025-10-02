@@ -148,6 +148,7 @@ function customize_pagination_next( $block_content ) {
 	return $block_content;
 }
 
+
 add_filter( 'render_block_core/query-pagination-previous', 'customize_pagination_previous', 10, 1 );
 /**
  * Customizes the previous html output.
@@ -163,4 +164,52 @@ function customize_pagination_previous( $block_content ) {
 </svg>';
 	$block_content = str_replace( 'Previous Page', $svg, $block_content );
 	return $block_content;
+}
+
+
+add_filter( 'render_block_core/post-date', 'post_date_linebreaks_regex', 10, 1 );
+/**
+ * Replace spaces with <br/> for the rendered core/post-date block when viewing single post.
+ *
+ * @param string $block_content Block HTML output.
+ * @return string Modified HTML.
+ */
+function post_date_linebreaks_regex( $block_content ) {
+
+	if ( is_single() || is_search() ) {
+		// Regex to find the <a> tag and its content.
+		// It captures the parts of the text to be reassembled with a line break.
+		// Matches exactly 3 letters, followed by a space, followed by numbers only. This so only affects the date format like "Sep 23".
+		$pattern = '/(<a[^>]*>)([A-Za-z]{3})\s(\d+)(<\/a>)/i';
+
+		// Check if the pattern is found.
+		if ( preg_match( $pattern, $block_content ) ) {
+			// Replace the space with a <br/> tag.
+			// $1 is the opening <a> tag.
+			// $2 is the first part of the text (e.g., "Sep").
+			// $3 is the second part of the text (e.g., "23").
+			// $4 is the closing </a> tag.
+			$block_content = preg_replace( $pattern, '$1$2<br/>$3$4', $block_content );
+		}
+	}
+
+	return $block_content;
+}
+
+
+add_action( 'init', 'remove_emojis' );
+/**
+ * Removes emoji detection script and styles from the frontend.
+ *
+ * Improves performance by removing WordPress's default emoji support
+ * scripts and styles when not needed on the frontend.
+ *
+ * @since 1.0.0
+ */
+function remove_emojis() {
+	if ( is_admin() ) {
+		return;
+	}
+	remove_action( 'wp_head', 'print_emoji_detection_script', 7 );
+	remove_action( 'wp_print_styles', 'print_emoji_styles' );
 }

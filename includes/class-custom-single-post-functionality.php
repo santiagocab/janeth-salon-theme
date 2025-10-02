@@ -23,37 +23,8 @@ class Custom_Single_Post_Functionality {
 	 * Initializes the class and sets up the necessary hooks.
 	 */
 	public function __construct() {
-		add_filter( 'render_block_core/post-date', array( $this, 'post_date_linebreaks_regex' ), 10, 1 );
 		add_filter( 'comment_form_default_fields', array( $this, 'my_theme_custom_comment_fields_with_placeholders' ), 10, 1 );
 		add_filter( 'comment_form_defaults', array( $this, 'my_theme_custom_comment_form_args' ), 10, 1 );
-	}
-
-	/**
-	 * Replace spaces with <br/> for the rendered core/post-date block when viewing single post.
-	 *
-	 * @param string $block_content Block HTML output.
-	 * @return string Modified HTML.
-	 */
-	public function post_date_linebreaks_regex( $block_content ) {
-
-		if ( is_single() || is_search() ) {
-			// Regex to find the <a> tag and its content.
-			// It captures the parts of the text to be reassembled with a line break.
-			// Matches exactly 3 letters, followed by a space, followed by numbers only. This so only affects the date format like "Sep 23".
-			$pattern = '/(<a[^>]*>)([A-Za-z]{3})\s(\d+)(<\/a>)/i';
-
-			// Check if the pattern is found.
-			if ( preg_match( $pattern, $block_content ) ) {
-				// Replace the space with a <br/> tag.
-				// $1 is the opening <a> tag.
-				// $2 is the first part of the text (e.g., "Sep").
-				// $3 is the second part of the text (e.g., "23").
-				// $4 is the closing </a> tag.
-				$block_content = preg_replace( $pattern, '$1$2<br/>$3$4', $block_content );
-			}
-		}
-
-		return $block_content;
 	}
 
 	/**

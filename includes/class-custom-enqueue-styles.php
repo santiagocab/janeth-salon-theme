@@ -184,7 +184,7 @@ class Custom_Enqueue_Styles {
 		if ( ! empty( $css ) ) {
 			// CSS is already sanitized through file reading and filtering, safe to output directly.
 			// phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped
-			echo "<style id='blockstarter-critical-home-css'>{$css}</style>";
+			echo "<style id='critical-css'>{$css}</style>";
 		}
 	}
 
