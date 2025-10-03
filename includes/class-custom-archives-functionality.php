@@ -46,16 +46,16 @@ class Custom_Archives_Functionality {
 		?>
 		<tr class="form-field">
 			<th scope="row" valign="top">
-				<label for="category_header_image"><?php esc_html_e( 'Header Image', 'janethsalon' ); ?></label>
+				<label for="category_header_image"><?php esc_html_e( 'Header Image', 'janeth-salon-theme' ); ?></label>
 			</th>
 			<td>
 				<div class="category-header-image-wrapper">
 					<input type="hidden" id="category_header_image" name="category_header_image" value="<?php echo esc_attr( $header_image_id ); ?>" />
 					<button type="button" class="button category-header-image-upload" data-target="category_header_image">
-						<?php esc_html_e( 'Select Header Image', 'janethsalon' ); ?>
+						<?php esc_html_e( 'Select Header Image', 'janeth-salon-theme' ); ?>
 					</button>
 					<button type="button" class="button category-header-image-remove" style="<?php echo $header_image_id ? '' : 'display:none;'; ?>">
-						<?php esc_html_e( 'Remove Image', 'janethsalon' ); ?>
+						<?php esc_html_e( 'Remove Image', 'janeth-salon-theme' ); ?>
 					</button>
 					<div class="category-header-image-preview" style="margin-top: 10px;">
 						<?php if ( $header_image_url ) : ?>
@@ -63,7 +63,7 @@ class Custom_Archives_Functionality {
 						<?php endif; ?>
 					</div>
 				</div>
-				<p class="description"><?php esc_html_e( 'Upload a custom header image for this category.', 'janethsalon' ); ?></p>
+				<p class="description"><?php esc_html_e( 'Upload a custom header image for this category.', 'janeth-salon-theme' ); ?></p>
 			</td>
 		</tr>
 		<?php

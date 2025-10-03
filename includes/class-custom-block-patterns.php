@@ -27,19 +27,19 @@ class Custom_Block_Patterns {
 	 * @since 1.0.0
 	 */
 	public function __construct() {
-		add_action( 'init', array( $this, 'blockstarter_register_block_patterns' ), 9 );
+		add_action( 'init', array( $this, 'register_block_patterns' ), 9 );
 	}
 
 	/**
 	 * Registers block patterns categories, and type.
 	 */
-	public function blockstarter_register_block_patterns() {
+	public function register_block_patterns() {
 		$block_pattern_categories = array(
-			'blockstarter' => array(
-				'label' => esc_html__( 'Blockstarter', 'blockstarter' ),
+			'janeth-salon-theme' => array(
+				'label' => esc_html__( 'Janeth Salon', 'janeth-salon-theme' ),
 			),
 		);
-		$block_pattern_categories = apply_filters( 'blockstarter_block_pattern_categories', $block_pattern_categories );
+		$block_pattern_categories = apply_filters( 'js_block_pattern_categories', $block_pattern_categories );
 		foreach ( $block_pattern_categories as $name => $properties ) {
 			if ( ! WP_Block_Pattern_Categories_Registry::get_instance()->is_registered( $name ) ) {
 				register_block_pattern_category( $name, $properties );

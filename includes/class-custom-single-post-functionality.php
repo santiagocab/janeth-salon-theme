@@ -23,8 +23,8 @@ class Custom_Single_Post_Functionality {
 	 * Initializes the class and sets up the necessary hooks.
 	 */
 	public function __construct() {
-		add_filter( 'comment_form_default_fields', array( $this, 'my_theme_custom_comment_fields_with_placeholders' ), 10, 1 );
-		add_filter( 'comment_form_defaults', array( $this, 'my_theme_custom_comment_form_args' ), 10, 1 );
+		add_filter( 'comment_form_default_fields', array( $this, 'custom_comment_fields_with_placeholders' ), 10, 1 );
+		add_filter( 'comment_form_defaults', array( $this, 'custom_comment_form_textarea_with_placeholder' ), 10, 1 );
 	}
 
 	/**
@@ -33,7 +33,7 @@ class Custom_Single_Post_Functionality {
 	 * @param array $fields The default comment form fields.
 	 * @return array Modified comment form fields.
 	 */
-	public function my_theme_custom_comment_fields_with_placeholders( $fields ) {
+	public function custom_comment_fields_with_placeholders( $fields ) {
 
 		$commenter = wp_get_current_commenter();
 		$req       = get_option( 'require_name_email' );
@@ -43,21 +43,21 @@ class Custom_Single_Post_Functionality {
 		// Get the original label for the name field and create the new field.
 		$name_label       = wp_strip_all_tags( $fields['author'] );
 		$fields['author'] = '<p class="comment-form-author">
-				<!-- <label for="author">' . __( 'Name', 'textdomain' ) . ( $req ? ' <span class="required">*</span>' : '' ) . '</label> -->
+				<!-- <label for="author">' . __( 'Name', 'janeth-salon-theme' ) . ( $req ? ' <span class="required">*</span>' : '' ) . '</label> -->
 				<input id="author" name="author" type="text" value="' . esc_attr( $commenter['comment_author'] ) . '" size="30" placeholder="Your ' . esc_attr( $name_label ) . '"' . $aria_req . $html_req . ' />
 		</p>';
 
 		// Get the original label for the email field and create the new field.
 		$email_label     = wp_strip_all_tags( $fields['email'] );
 		$fields['email'] = '<p class="comment-form-email">
-				<!-- <label for="email">' . __( 'Email', 'textdomain' ) . ( $req ? ' <span class="required">*</span>' : '' ) . '</label> -->
+				<!-- <label for="email">' . __( 'Email', 'janeth-salon-theme' ) . ( $req ? ' <span class="required">*</span>' : '' ) . '</label> -->
 				<input id="email" name="email" type="email" value="' . esc_attr( $commenter['comment_author_email'] ) . '" size="30" placeholder="Your ' . esc_attr( $email_label ) . '"' . $aria_req . $html_req . ' />
 		</p>';
 
 		// Get the original label for the URL field and create the new field.
 		$url_label     = wp_strip_all_tags( $fields['url'] );
 		$fields['url'] = '<p class="comment-form-url">
-				<!-- <label for="url">' . __( 'Website', 'textdomain' ) . '</label> -->
+				<!-- <label for="url">' . __( 'Website', 'janeth-salon-theme' ) . '</label> -->
 				<input id="url" name="url" type="url" value="' . esc_attr( $commenter['comment_author_url'] ) . '" size="30" placeholder="' . esc_attr( $url_label ) . '" />
 		</p>';
 
@@ -72,13 +72,13 @@ class Custom_Single_Post_Functionality {
 	 * @param array $args The default comment form arguments.
 	 * @return array Modified comment form arguments.
 	 */
-	public function my_theme_custom_comment_form_args( $args ) {
+	public function custom_comment_form_textarea_with_placeholder( $args ) {
 		// Get the comment label's text without any HTML tags.
 		$comment_label_text = wp_strip_all_tags( $args['comment_field'] );
 
 		// Build the new comment field markup with the custom placeholder.
 		$args['comment_field'] = '<p class="comment-form-comment">
-				<!-- <label for="comment">' . _x( 'Comment', 'noun' ) . ' <span class="required">*</span></label> -->
+				<!-- <label for="comment">' . _x( 'Comment', 'janeth-salon-theme' ) . ' <span class="required">*</span></label> -->
 				<textarea id="comment" name="comment" cols="45" rows="8" aria-required="true" placeholder="Your Comment *"></textarea>
 		</p>';
 

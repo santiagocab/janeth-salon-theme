@@ -1,8 +1,8 @@
 <?php
 /**
  * Title: Header Image
- * Slug: blockstarter/header-image
- * Categories: blockstarter
+ * Slug: janeth-salon-theme/header-image
+ * Categories: janeth-salon-theme
  *
  * @package JanethSalon
  */

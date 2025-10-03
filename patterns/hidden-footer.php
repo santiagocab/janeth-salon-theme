@@ -1,8 +1,8 @@
 <?php
 /**
  * Title: Footer
- * Slug: blockstarter/footer
- * Categories: blockstarter
+ * Slug: janeth-salon-theme/footer
+ * Categories: janeth-salon-theme
  * Inserter: no
  *
  * @package JanethSalon

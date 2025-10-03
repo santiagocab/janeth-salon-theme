@@ -7,7 +7,7 @@
  * @package JanethSalon
  */
 
-add_action( 'wp_head', 'blockstarter_preload_cover_video' );
+add_action( 'wp_head', 'janeth_salon_preload_cover_video' );
 
 /**
  * Preloads video assets from the first cover block on singular pages.
@@ -17,7 +17,7 @@ add_action( 'wp_head', 'blockstarter_preload_cover_video' );
  *
  * @since 1.0.0
  */
-function blockstarter_preload_cover_video() {
+function janeth_salon_preload_cover_video() {
 
 	if ( ! is_singular() ) {
 		return;

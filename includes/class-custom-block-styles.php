@@ -36,7 +36,7 @@ class Custom_Block_Styles {
 			'core/social-links', // The block name (e.g., 'core/list' for the List block).
 			array(
 				'name'         => 'filled-square',
-				'label'        => __( 'Filled Square', 'blockstarter' ),
+				'label'        => __( 'Filled Square', 'janeth-salon-theme' ),
 				'inline_style' => '.wp-block-social-links.is-style-filled-square{gap:0.9rem;}.wp-block-social-links.is-style-filled-square li{ border-radius:0px;background-color:#000;}.wp-block-social-links.is-style-filled-square li svg{width:18px;height:18px;}}',
 			)
 		);

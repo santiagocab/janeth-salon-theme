@@ -1,13 +1,13 @@
 <?php
 /**
- * Blockstarter functions and definitions
+ * Theme functions and definitions
  *
  * @link https://developer.wordpress.org/themes/basics/theme-functions/
  *
  * @package JanethSalon
  */
 
-add_action( 'after_setup_theme', 'blockstarter_setup' );
+add_action( 'after_setup_theme', 'janeth_salon_theme_setup' );
 /**
  * Sets up theme defaults and registers support for various WordPress features.
  *
@@ -17,9 +17,9 @@ add_action( 'after_setup_theme', 'blockstarter_setup' );
  *
  * @since 1.0.0
  */
-function blockstarter_setup() {
+function janeth_salon_theme_setup() {
 		// Make theme available for translation.
-		load_theme_textdomain( 'blockstarter', get_template_directory() . '/languages' );
+		load_theme_textdomain( 'janeth-salon-theme', get_template_directory() . '/languages' );
 		// Add theme support.
 		add_theme_support( 'automatic-feed-links' );
 		add_theme_support( 'wp-block-styles' );
@@ -30,7 +30,7 @@ function blockstarter_setup() {
 		add_theme_support( 'responsive-embeds' );
 }
 
-add_filter( 'get_custom_logo', 'blockstarter_get_custom_logo_callback' );
+add_filter( 'get_custom_logo', 'janeth_salon_theme_get_custom_logo_callback' );
 /**
  * Customizes the custom logo output.
  *
@@ -41,7 +41,7 @@ add_filter( 'get_custom_logo', 'blockstarter_get_custom_logo_callback' );
  * @param string $html Custom logo HTML output.
  * @return string Modified custom logo HTML.
  */
-function blockstarter_get_custom_logo_callback( $html ) {
+function janeth_salon_theme_get_custom_logo_callback( $html ) {
 	if ( has_custom_logo() ) {
 		return $html;
 	}
@@ -61,7 +61,7 @@ add_filter(
 	}
 );
 
-add_filter( 'excerpt_length', 'blockstarter_excerpt_length' );
+add_filter( 'excerpt_length', 'janeth_salon_theme_excerpt_length' );
 /**
  * Filters the number of words in an excerpt.
  *
@@ -70,7 +70,7 @@ add_filter( 'excerpt_length', 'blockstarter_excerpt_length' );
  * @param int $length The number of words.
  * @return int The modified excerpt length.
  */
-function blockstarter_excerpt_length( $length ) {
+function janeth_salon_theme_excerpt_length( $length ) {
 	$length = 52;
 	return $length;
 }

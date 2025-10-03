@@ -56,13 +56,13 @@ class Custom_Enqueue_Styles {
 	public function register_block_styles() {
 			$block_styles = array(
 				'core/query'            => array(
-					'left-featured-image' => __( 'Left Featured Image', 'blockstarter' ),
+					'left-featured-image' => __( 'Left Featured Image', 'janeth-salon-theme' ),
 				),
 				'core/post-terms'       => array(
-					'term-button' => __( 'Button Style', 'blockstarter' ),
+					'term-button' => __( 'Button Style', 'janeth-salon-theme' ),
 				),
 				'core/query-pagination' => array(
-					'pagination-button' => __( 'Button Style', 'blockstarter' ),
+					'pagination-button' => __( 'Button Style', 'janeth-salon-theme' ),
 				),
 			);
 			foreach ( $block_styles as $block => $styles ) {
@@ -93,11 +93,11 @@ class Custom_Enqueue_Styles {
 				// Get the filename and core block name.
 				$filename   = basename( $file, '.css' );
 				$block_name = str_replace( 'core-block-', 'core/', $filename );
-				$version    = wp_get_theme( 'blockstarter' )->get( 'Version' );
+				$version    = wp_get_theme( 'janeth-salon-theme' )->get( 'Version' );
 				wp_enqueue_block_style(
 					$block_name,
 					array(
-						'handle' => "blockstarter-block-{$filename}",
+						'handle' => "janeth-salon-theme-block-{$filename}",
 						'src'    => get_theme_file_uri( "dist/css/{$filename}.min.css" ),
 						'path'   => get_theme_file_path( "dist/css/{$filename}.min.css" ),
 						'ver'    => $version,

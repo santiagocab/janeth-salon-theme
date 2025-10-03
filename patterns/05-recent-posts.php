@@ -1,8 +1,8 @@
 <?php
 /**
  * Title: Recent Posts
- * Slug: blockstarter/recent-posts
- * Categories: blockstarter
+ * Slug: janeth-salon-theme/recent-posts
+ * Categories: janeth-salon-theme
  *
  * @package JanethSalon
  */
@@ -11,7 +11,7 @@
 
 <!-- wp:group {"align":"full","style":{"spacing":{"blockGap":"0","padding":{"top":"var:preset|spacing|x-small","bottom":"var:preset|spacing|large","left":"var:preset|spacing|x-small","right":"var:preset|spacing|x-small"},"margin":{"top":"3rem","bottom":"0"}}},"backgroundColor":"tertiary","layout":{"type":"constrained"}} -->
 <div class="wp-block-group alignfull has-tertiary-background-color has-background" style="margin-top:3rem;margin-bottom:0;padding-top:var(--wp--preset--spacing--x-small);padding-right:var(--wp--preset--spacing--x-small);padding-bottom:var(--wp--preset--spacing--large);padding-left:var(--wp--preset--spacing--x-small)"><!-- wp:heading {"style":{"spacing":{"padding":{"top":"var:preset|spacing|x-small","bottom":"var:preset|spacing|x-small"}}},"className":"wp-block-heading"} -->
-<h2 class="wp-block-heading" style="padding-top:var(--wp--preset--spacing--x-small);padding-bottom:var(--wp--preset--spacing--x-small)"><?php esc_html_e( 'You might also like', 'blockstarter' ); ?></h2>
+<h2 class="wp-block-heading" style="padding-top:var(--wp--preset--spacing--x-small);padding-bottom:var(--wp--preset--spacing--x-small)"><?php esc_html_e( 'You might also like', 'janeth-salon-theme' ); ?></h2>
 <!-- /wp:heading -->
 
 <!-- wp:query {"queryId":1,"query":{"perPage":"3","pages":"3","offset":0,"postType":"post","order":"desc","orderBy":"date","author":"","search":"","exclude":[],"sticky":"exclude","inherit":false},"displayLayout":{"type":"flex","columns":3}} -->

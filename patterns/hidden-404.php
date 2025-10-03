@@ -1,8 +1,8 @@
 <?php
 /**
  * Title: 404
- * Slug: blockstarter/404
- * Categories: blockstarter
+ * Slug: janeth-salon-theme/404
+ * Categories: janeth-salon-theme
  * Inserter: no
  *
  * @package JanethSalon
@@ -18,7 +18,7 @@
 					<!-- wp:group {"style":{"spacing":{"blockGap":"48px"}},"layout":{"type":"constrained","contentSize":"75%","justifyContent":"left","wideSize":"75%"}} -->
 						<div class="wp-block-group">
 							<!-- wp:heading {"level":1,"textAlign":"left","style":{"typography":{"textTransform":"uppercase","fontStyle":"normal","fontWeight":"700","letterSpacing":"0px","lineHeight":"1"}},"textColor":"white","fontSize":"xxx-large"} -->
-								<h1 class="wp-block-heading has-text-align-left has-white-color has-text-color has-xxx-large-font-size" style="font-style:normal;font-weight:700;letter-spacing:0px;line-height:1;text-transform:uppercase"><?php esc_html_e( '404-Error Page', 'blockstarter' ); ?></h1>
+								<h1 class="wp-block-heading has-text-align-left has-white-color has-text-color has-xxx-large-font-size" style="font-style:normal;font-weight:700;letter-spacing:0px;line-height:1;text-transform:uppercase"><?php esc_html_e( '404-Error Page', 'janeth-salon-theme' ); ?></h1>
 							<!-- /wp:heading -->
 							<!-- wp:heading {"level":2,"textAlign":"left","style":{"typography":{"textTransform":"uppercase","fontStyle":"normal","fontWeight":"700","letterSpacing":"0px","lineHeight":"1"}},"textColor":"white","fontSize":"xxx-large"} -->
 								<h2 class="wp-block-heading has-text-align-left has-white-color has-text-color has-xxx-large-font-size" style="font-style:normal;font-weight:700;letter-spacing:0px;line-height:1;text-transform:uppercase">TRY VISIT US AT OUR SALON :)</h2>

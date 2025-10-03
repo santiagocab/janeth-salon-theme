@@ -1,8 +1,8 @@
 <?php
 /**
  * Title: Search
- * Slug: blockstarter/search
- * Categories: blockstarter
+ * Slug: janeth-salon-theme/search
+ * Categories: janeth-salon-theme
  * Inserter: no
  *
  * @package JanethSalon
@@ -15,7 +15,7 @@
 		<!-- wp:group {"style":{"spacing":{"blockGap":"var:preset|spacing|medium"}}} -->
 			<div class="wp-block-group">
 				<!-- wp:query-title {"type":"search","textAlign":"center"} /-->
-				<!-- wp:search {"label":"","placeholder":"<?php esc_html_e( 'Search site...', 'blockstarter' ); ?>","width":50,"widthUnit":"%","buttonText":"<?php esc_html_e( 'Search', 'blockstarter' ); ?>","buttonUseIcon":true,"align":"center"} /-->
+				<!-- wp:search {"label":"","placeholder":"<?php esc_html_e( 'Search site...', 'janeth-salon-theme' ); ?>","width":50,"widthUnit":"%","buttonText":"<?php esc_html_e( 'Search', 'janeth-salon-theme' ); ?>","buttonUseIcon":true,"align":"center"} /-->
 			</div>
 		<!-- /wp:group -->
 	</div>
@@ -60,7 +60,7 @@
 				<!-- /wp:group -->
 				<!-- wp:query-no-results -->
 					<!-- wp:paragraph {"placeholder":"Add text or blocks that will display when a query returns no results.","style":{"spacing":{"margin":{"top":"0","right":"0","bottom":"0","left":"0"}}}} -->
-						<p style="margin-top:0;margin-right:0;margin-bottom:0;margin-left:0"><?php esc_html_e( 'Sorry, nothing was found for that search term.', 'blockstarter' ); ?></p>
+						<p style="margin-top:0;margin-right:0;margin-bottom:0;margin-left:0"><?php esc_html_e( 'Sorry, nothing was found for that search term.', 'janeth-salon-theme' ); ?></p>
 					<!-- /wp:paragraph -->
 				<!-- /wp:query-no-results -->
 			</main>
