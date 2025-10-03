@@ -31,6 +31,7 @@ class Optimizations_Image {
 		add_filter( 'render_block_core/image', array( $this, 'image_block_rmv_extra_sizes' ), 10, 2 );
 		add_filter( 'wp_calculate_image_srcset', array( $this, 'set_post_image_srcset' ), 10, 5 );
 		add_filter( 'wp_calculate_image_sizes', array( $this, 'set_post_image_sizes' ), 10, 5 );
+		add_filter( 'wp_get_attachment_image_attributes', array( $this, 'feature_image_load_eager' ), 10, 2 );
 	}
 
 	/**
@@ -256,6 +257,26 @@ class Optimizations_Image {
 
 		return '(max-width: 430px) 100px, 100vw';
 	}
+
+	/**
+	 * Set featured image to load eagerly.
+	 *
+	 * Sets the loading attribute to 'eager' for featured images to improve
+	 * perceived page load performance for above-the-fold content.
+	 *
+	 * @since 1.0.0
+	 *
+	 * @param array   $attr       Array of attribute values for the image markup.
+	 * @param WP_Post $attachment Image attachment post object.
+	 * @return array Modified attributes array.
+	 */
+	public function feature_image_load_eager( $attr, $attachment ) {
+		if ( is_singular() && has_post_thumbnail() && get_post_thumbnail_id() === $attachment->ID ) {
+			$attr['loading'] = 'eager';
+		}
+		return $attr;
+	}
+
 }
 
 new Optimizations_Image();
