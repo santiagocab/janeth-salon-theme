@@ -60,7 +60,7 @@
 		"color": {
 			"palette": [
 				{
-					"color": "#e16138",
+					"color": "#ca2e00",
 					"name": "Primary",
 					"slug": "primary"
 				},
@@ -80,7 +80,7 @@
 					"slug": "base"
 				},
 				{
-					"color": "#e16138",
+					"color": "#ca2e00",
 					"name": "Links",
 					"slug": "custom-links"
 				},
@@ -432,7 +432,7 @@
 		"elements": {
 			"button": {
 				"color": {
-					"background": "#e16138"
+					"background": "#ca2e00"
 				},
 				"typography": {
 					"lineHeight": "var(--wp--custom--line-height--normal)"
