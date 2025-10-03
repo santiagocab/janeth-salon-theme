@@ -1,0 +1,169 @@
+# Spanish (Spain) language file for Janeth Salon Theme
+# Copyright (C) 2025 Janeth Salon Theme
+# This file is distributed under the same license as the Janeth Salon Theme package.
+msgid ""
+msgstr ""
+"Project-Id-Version: Janeth Salon Theme\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-10-03 12:00+0000\n"
+"PO-Revision-Date: 2025-10-03 12:00+0000\n"
+"Last-Translator: \n"
+"Language-Team: Spanish\n"
+"Language: es_ES\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: includes/class-custom-archives-functionality.php:49
+msgid "Header Image"
+msgstr "Imagen de Cabecera"
+
+#: includes/class-custom-archives-functionality.php:55
+msgid "Select Header Image"
+msgstr "Seleccionar Imagen de Cabecera"
+
+#: includes/class-custom-archives-functionality.php:58
+msgid "Remove Image"
+msgstr "Quitar Imagen"
+
+#: includes/class-custom-archives-functionality.php:66
+msgid "Upload a custom header image for this category."
+msgstr "Sube una imagen de cabecera personalizada para esta categoría."
+
+#: includes/class-custom-block-patterns.php:39
+msgid "Janeth Salon"
+msgstr "Salón Janeth"
+
+#: includes/class-custom-block-styles.php:39
+msgid "Filled Square"
+msgstr "Cuadrado Relleno"
+
+#: includes/class-custom-enqueue-styles.php:59
+msgid "Left Featured Image"
+msgstr "Imagen Destacada Izquierda"
+
+#: includes/class-custom-enqueue-styles.php:62
+#: includes/class-custom-enqueue-styles.php:65
+msgid "Button Style"
+msgstr "Estilo de Botón"
+
+#: includes/class-custom-single-post-functionality.php:46
+msgid "Name"
+msgstr "Nombre"
+
+#: includes/class-custom-single-post-functionality.php:53
+msgid "Email"
+msgstr "Correo Electrónico"
+
+#: includes/class-custom-single-post-functionality.php:60
+msgid "Website"
+msgstr "Sitio Web"
+
+#: includes/class-custom-single-post-functionality.php:81
+msgid "Comment"
+msgstr "Comentario"
+
+#: patterns/02-categories.php:14
+msgid "Post Categories "
+msgstr "Categorías de Entradas "
+
+#: patterns/02-categories.php:25
+msgid "Hair Care"
+msgstr "Cuidado del Cabello"
+
+#: patterns/02-categories.php:37
+msgid "Nails Care"
+msgstr "Cuidado de Uñas"
+
+#: patterns/02-categories.php:49
+msgid "Testimonials"
+msgstr "Testimonios"
+
+#: patterns/03-about.php:21
+msgid "Our Mission"
+msgstr "Nuestra Misión"
+
+#: patterns/03-about.php:25
+msgid "We are a non-government organization committed to sustainability and nature preservation. We are working on sustainable solutions that protect and restore habitats for wildlife species worldwide. Through innovative research, community engagement, and advocacy efforts, we strive to create a harmonious balance between human activities and the delicate ecosystems we share."
+msgstr "Somos una organización no gubernamental comprometida con la sostenibilidad y la preservación de la naturaleza. Trabajamos en soluciones sostenibles que protegen y restauran hábitats para especies de vida silvestre en todo el mundo. A través de investigación innovadora, participación comunitaria y esfuerzos de promoción, nos esforzamos por crear un equilibrio armonioso entre las actividades humanas y los delicados ecosistemas que compartimos."
+
+#: patterns/04-contact.php:14
+msgid "Contact Us"
+msgstr "Contáctanos"
+
+#: patterns/04-contact.php:19
+msgid "Get in touch"
+msgstr "Ponte en contacto"
+
+#: patterns/05-recent-posts.php:14
+msgid "You might also like"
+msgstr "También te puede gustar"
+
+#: patterns/hidden-404.php:21
+msgid "404-Error Page"
+msgstr "Página de Error 404"
+
+#: patterns/hidden-index-title.php:14
+msgid "Latest Posts"
+msgstr "Últimas Entradas"
+
+#: patterns/hidden-post-sidebar.php:16
+msgid "Search"
+msgstr "Buscar"
+
+#: patterns/hidden-post-sidebar.php:23
+msgid "Archive"
+msgstr "Archivo"
+
+#: patterns/hidden-post-sidebar.php:31
+msgid "Categories"
+msgstr "Categorías"
+
+#: patterns/hidden-post-sidebar.php:39
+msgid "Recent Posts"
+msgstr "Entradas Recientes"
+
+#: patterns/hidden-post-sidebar.php:47
+msgid "Tags"
+msgstr "Etiquetas"
+
+#: patterns/hidden-post-sidebar.php:55
+msgid "Social Links"
+msgstr "Enlaces Sociales"
+
+#: patterns/hidden-search.php:18
+msgid "Search site..."
+msgstr "Buscar en el sitio..."
+
+#: patterns/hidden-search.php:63
+msgid "Sorry, nothing was found for that search term."
+msgstr "Lo sentimos, no se encontró nada para ese término de búsqueda."
+
+#: patterns/hidden-sidebar.php:16
+msgid "Search the website"
+msgstr "Buscar en el sitio web"
+
+#: patterns/hidden-sidebar.php:25
+msgid "Useful Links"
+msgstr "Enlaces Útiles"
+
+#: patterns/hidden-sidebar.php:29
+msgid "Links I found useful and wanted to share."
+msgstr "Enlaces que encontré útiles y quería compartir."
+
+#: patterns/hidden-sidebar.php:34
+msgid "Full site editing in WordPress"
+msgstr "Edición completa del sitio en WordPress"
+
+#: patterns/hidden-sidebar.php:36
+msgid "Classic themes vs block themes"
+msgstr "Temas clásicos vs temas de bloques"
+
+#: patterns/hidden-sidebar.php:38
+msgid "Janeth Salon theme documentation"
+msgstr "Documentación del tema Salón Janeth"
+
+#: patterns/hidden-sidebar.php:43
+msgid "Follow Us"
+msgstr "Síguenos"
