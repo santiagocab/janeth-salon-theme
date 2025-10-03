@@ -213,3 +213,6 @@ function remove_emojis() {
 	remove_action( 'wp_head', 'print_emoji_detection_script', 7 );
 	remove_action( 'wp_print_styles', 'print_emoji_styles' );
 }
+
+// Force WordPress to lazy-load *every* image, including the first one in content.
+add_filter( 'wp_omit_loading_attr_threshold', '__return_zero' );
