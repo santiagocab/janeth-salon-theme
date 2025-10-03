@@ -41,8 +41,8 @@ GNU General Public License for more details.
 All Illustrations by chatGPT
 
 ### PHPCS Setup
-1. Install composer if you don't have it
-2. Run composer install from root folder
+1. Install composer if you don't have it: `composer self-update && composer global update`
+2. Run composer install from root folder: `composer require --dev automattic/vipwpcs`
 
 ### PHPCS Usage
 * Scan everything (except for files excluded in phpcs.xml.dist) : `vendor/bin/phpcs . -v --colors -s`
