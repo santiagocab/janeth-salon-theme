@@ -1,5 +1,5 @@
 === Janeth Salon Theme ===
-Contributors: nravota12
+Contributors: santiagocab
 Tags: blog, wide-blocks, block-patterns, block-styles, custom-colors, custom-logo, editor-style, featured-images, full-site-editing, style-variations, translation-ready
 Requires at least: 6.1
 Tested up to: 6.4
@@ -9,12 +9,12 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
 == Description ==
 
-Custom Theme created for a hair salon
+Custom Block Ready Theme for a hair salon
 
 == Copyright ==
 
-Janeth Salon Theme, Copyright 2025 - present Atanas Yonkov
-Janeth Salon Theme is distributed under the terms of the GNU GPLv2 or later
+Janeth Salon, Copyright 2025 - present Santiago Cabrera
+Janeth Salon is distributed under the terms of the GNU GPLv2 or later
 
 This program is free software: you can redistribute it and/or modify
 it under the terms of the GNU General Public License as published by
@@ -28,15 +28,17 @@ GNU General Public License for more details.
 
 == Changelog ==
 
-= 1.1.0 - January 2025 =
-* Update Freemius SDK
+= 1.0.1 - October 2025 =
+* Add translation
+
+= 1.0.0 - September 2025 =
+* Initial release
 
 == Credits ==
 * Based on Create Block Theme https://wordpress.org/plugins/create-block-theme/, (C) 2022 - present WordPress.org, License [GPLv2 or later](https://www.gnu.org/licenses/gpl-2.0.html)
 
 == Resources ==
-All Illustrations by Ana Stoyanova https://nasiothemes.com/, Copyright (c) 2023 - present Ana Stoyanova, License [CC-BY](https://creativecommons.org/licenses/by/4.0/)
-Theme Logo by Atanas Yonkov https://nasiothemes.com/, Copyright (c) 2023 - present Atanas Yonkov, License [CC-BY](https://creativecommons.org/licenses/by/4.0/)
+All Illustrations by chatGPT
 
 ### PHPCS Setup
 1. Install composer if you don't have it
